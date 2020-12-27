@@ -1,3 +1,122 @@
 * {
-    background-color: red;
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+
+    --body-font-size: 1.125rem;
+
+    --font-small: 0.625rem;
+
+    --mobile-down: 23.4375rem;
+    --mobile-up: 23.5rem;
 }
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: var(--body-font-size);
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.bold-font {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.regular-font {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+.main-app {
+    background-color: var(--dark-cyan);
+    padding-top: 10.9375rem;
+    padding-bottom: 10.9375rem;
+}
+
+.bg-top {
+    position: absolute;
+    width: 60.9375rem;
+    height: 60.9375rem;
+    left: -17.3125rem;
+    top: -31.7813rem;
+    background-image: url('/images/bg-pattern-top.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.card {
+    width: 21.875rem;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.125rem;
+    overflow: hidden;
+    z-index: 2;
+}
+
+@media (max-width: 23.4375rem) {
+    .card {
+        width: 20.3125rem;
+        height: 23.4375rem;
+        margin-bottom: 9.0625rem;
+        margin-top: 9.1875rem;
+    }
+}
+
+.card-top {
+    background-image: url('/images/bg-pattern-card.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 8.8125rem;
+    z-index: 2;
+}
+
+.card-image {
+    z-index: 2;
+}
+
+.card-middle {
+    background-color: white;
+    z-index: 2;
+}
+
+.card-middle-line1 {}
+
+.name {}
+
+.age {}
+
+.card-middle-line2 {}
+
+.card-bottom {
+    display: flex;
+}
+
+.card-bottom-item {
+    background-color: white;
+}
+
+.item-number {}
+
+.item-text {}
+
+.bg-bottom {}
