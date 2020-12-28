@@ -9,10 +9,10 @@
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 
   <link rel="stylesheet" href="/dist/style.css">
   <script src="/app/js/script.js"></script>
@@ -20,13 +20,17 @@
 </head>
 <body>
   <div class="main-app">
-   <div class="bg-top"></div>
+   <div class="bg-top"><img src="/images/bg-pattern-top.svg" alt=""></div>
    <div class="card">
      <div class="card-top"></div>
-     <div class="card-image"><img src="/images/image-victor.jpg" alt=""></div>
+     <div class="card-image">
+       <div class="card-image-bg">
+         <img src="/images/image-victor.jpg" alt="">
+       </div>
+    </div>
      <div class="card-middle">
        <div class="card-middle-line1">
-         <div class="name">Victor Crest</div>
+         <div class="name bold-font">Victor Crest</div>
          <div class="age">26</div>
        </div>
        <div class="card-middle-line2">London</div>
@@ -34,23 +38,23 @@
      <div class="card-bottom">
        <div class="card-bottom-item">
          <div class="item-number bold-font">80K</div>
-         <div class="item-text regular-font">Followers</div>
+         <div class="item-text">Followers</div>
        </div>
        <div class="card-bottom-item">
          <div class="item-number bold-font">803K</div>
-         <div class="item-text regular-font">Likes</div>
+         <div class="item-text">Likes</div>
        </div>
        <div class="card-bottom-item">
          <div class="item-number bold-font">1.4K</div>
-         <div class="item-text regular-font">Photos</div>
+         <div class="item-text">Photos</div>
          </div>
        </div>  
      </div>
-    <div class="bg-bottom"></div>
+    <div class="bg-bottom"><img src="/images/bg-pattern-bottom.svg" alt=""></div>
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Jeremy Ng</a>.
   </div>
 </body>
 </html>
