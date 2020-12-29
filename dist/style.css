@@ -1,4 +1,7 @@
-* {
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+
     --dark-cyan: hsl(185, 75%, 39%);
     --very-dark-blue: hsl(229, 23%, 23%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
@@ -7,11 +10,6 @@
     --body-font-size: 1.125rem;
     --font-medium: 0.875rem;
     --font-small: 0.625rem;
-}
-
-html {
-    font-size: 100%;
-    box-sizing: border-box;
 }
 
 *,
