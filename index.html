@@ -3,51 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Profile card component</title>
-
-  <link rel="stylesheet" href="/dist/style.css">
-  <script src="/app/js/script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/dist/style.css">
+  <title>Frontend Mentor | Profile card component</title>
+  <script defer src="./app/js/script.js"></script> <!-- serves no purpose, just for developing my habits -->
 </head>
 <body>
-  <div class="main-app">
-   <div class="bg-top"><img src="/images/bg-pattern-top.svg" alt=""></div>
-   <div class="card">
-     <div class="card-top"></div>
-     <div class="card-image">
-       <div class="card-image-bg">
-         <img src="/images/image-victor.jpg" alt="">
-       </div>
-    </div>
-     <div class="card-middle">
-       <div class="card-middle-line1">
-         <div class="name bold-blue-font">Victor Crest</div>
-         <div class="age">26</div>
-       </div>
-       <div class="card-middle-line2">London</div>
-     </div>
-     <div class="card-bottom">
-       <div class="card-bottom-item">
-         <div class="item-number bold-blue-font">80K</div>
-         <div class="item-text">Followers</div>
-       </div>
-       <div class="card-bottom-item">
-         <div class="item-number bold-blue-font">803K</div>
-         <div class="item-text">Likes</div>
-       </div>
-       <div class="card-bottom-item">
-         <div class="item-number bold-blue-font">1.4K</div>
-         <div class="item-text">Photos</div>
-         </div>
-       </div>  
-     </div>
-    <div class="bg-bottom"><img src="/images/bg-pattern-bottom.svg" alt=""></div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Jeremy Ng</a>.
-  </div>
+	<h1>Front-End-Mentor: Profile Card Component</h1>
+	<main class="main-app">
+		<!-- <div class="bg-top"><img src="/images/bg-pattern-top.svg" alt=""></div> -->
+  		<article class="card">
+			<div class="card-top"></div>
+		    <div class="card-image">
+      			<div class="card-image-bg">
+       				<img src="/images/image-victor.jpg" alt="Profile Picture">
+			 	</div>
+			</div>
+
+	    	<section class="card-middle">
+    	 		<div class="card-middle-line1">
+	        		<p class="name bold-blue-font">Victor Crest</p>
+        			<p class="age">26</p>
+      			</div>
+      			<p class="card-middle-line2">London</p>
+			</section>
+			 
+     		<section class="card-bottom">
+       			<div class="card-bottom-item">
+         			<p class="item-number bold-blue-font">80K</p>
+         			<p class="item-text">Followers</p>
+       			</div>
+       			<div class="card-bottom-item">
+         			<p class="item-number bold-blue-font">803K</p>
+         			<p class="item-text">Likes</p>
+       			</div>
+       			<div class="card-bottom-item">
+         			<p class="item-number bold-blue-font">1.4K</p>
+         			<p class="item-text">Photos</p>
+        		</div>
+			</section>  
+		</article>
+		<!-- <div class="bg-bottom"><img src="/images/bg-pattern-bottom.svg" alt=""></div> -->
+		<footer class="attribution">
+			<p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="https://github.com/lanechanger" target="_blank">Jeremy Ng</a>.</p>
+		</footer>
+	</main>
 </body>
 </html>

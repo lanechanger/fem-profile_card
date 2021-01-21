@@ -16,6 +16,8 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 .bold-blue-font {
@@ -24,8 +26,6 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: var(--body-font-size);
     color: var(--dark-grayish-blue);
@@ -34,10 +34,21 @@ body {
     overflow: hidden;
 }
 
+h1 {
+    display: none;
+}
+
 .main-app {
     background-color: var(--dark-cyan);
-    padding-top: 10.9375rem;
-    padding-bottom: 9.5rem;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg"), var(--dark-cyan);
+    background-repeat: no-repeat;
+    background-position: top 5% left 5%, bottom 5% right 5%;
 }
 
 @media (max-width: 23.4375rem) {
@@ -200,14 +211,14 @@ body {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 0.6875rem;
+    /* 11px */
     text-align: center;
     overflow: hidden;
-    z-index: 1;
-    position: relative;
+    position: fixed;
     width: 100%;
-    background: white;
-    padding-bottom: 500px;
+    color: white;
+    bottom: 1rem;
 }
 
 .attribution a {
