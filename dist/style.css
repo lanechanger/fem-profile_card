@@ -8,8 +8,11 @@ html {
     --dark-gray: hsl(0, 0%, 59%);
 
     --body-font-size: 1.125rem;
+    /* 18px */
     --font-medium: 0.875rem;
+    /* 14px */
     --font-small: 0.625rem;
+    /* 10px */
 }
 
 *,
@@ -39,16 +42,17 @@ h1 {
 }
 
 .main-app {
-    background-color: var(--dark-cyan);
+    background: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg"), var(--dark-cyan);
+    background-repeat: no-repeat;
+    background-position: top calc(-45vh - 5%) left calc(1vw - 5%), bottom calc(-55vh - 5%) right calc(2vw - 5%);
+    /* background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw); */
+    background-size: calc(max(622px, 100% - 49vw));
+
     min-height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg"), var(--dark-cyan);
-    background-repeat: no-repeat;
-    background-position: top 5% left 5%, bottom 5% right 5%;
 }
 
 @media (max-width: 23.4375rem) {
@@ -58,30 +62,6 @@ h1 {
         /* Added the two below as overflow: hidden on the body wasn't removing the scroll bars from mobile */
         overflow: hidden;
         position: relative;
-    }
-}
-
-.bg-top {
-    position: absolute;
-    width: 60.9375rem;
-    height: 60.9375rem;
-    top: -31.7813rem;
-    left: -17.3125rem;
-}
-
-.bg-top img {
-    position: relative;
-    height: 100%;
-    z-index: 1;
-}
-
-@media (max-width: 23.4375rem) {
-    .bg-top {
-        position: absolute;
-        width: 38.875rem;
-        height: 38.875rem;
-        top: -21.875rem;
-        left: -26.125rem;
     }
 }
 
@@ -108,13 +88,10 @@ h1 {
     background: url('/images/bg-pattern-card.svg') no-repeat center center;
     background-size: cover;
     min-height: 8.8125rem;
-    z-index: 2;
 }
 
 .card-image {
     position: relative;
-    z-index: 2;
-    background: white;
 }
 
 .card-image-bg {
@@ -130,8 +107,6 @@ h1 {
 
 .card-image img {
     border-radius: 3.4375rem;
-    width: 6rem;
-    height: 6rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -152,75 +127,41 @@ h1 {
 
 .name {
     margin-left: 0.4375rem;
+    /* 7px */
 }
 
 .age {
     margin-left: 0.625rem;
+    /* 10px */
 }
 
 .card-middle-line2 {
     font-size: var(--font-medium);
     text-align: center;
     padding-top: 0.4375rem;
+    /* 7px */
 }
 
 .card-bottom {
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
     background: white;
     padding-top: 1.375rem;
-}
-
-.card-bottom-item {
-    background-color: white;
-}
-
-.item-number {
-    text-align: center;
+    padding-bottom: 1.375rem;
+    /* 22px */
 }
 
 .item-text {
     font-size: var(--font-small);
-    padding-bottom: 1.375rem;
-    text-align: center;
     letter-spacing: 0.0625rem;
-}
-
-.bg-bottom {
-    position: absolute;
-    width: 60.9375rem;
-    height: 60.9375rem;
-    top: 23.719rem;
-    left: 43.813rem;
-}
-
-.bg-bottom img {
-    position: relative;
-    height: 100%;
-    z-index: 1;
-}
-
-@media (max-width: 23.4375rem) {
-    .bg-bottom {
-        position: absolute;
-        width: 38.875rem;
-        height: 38.875rem;
-        top: 21.75rem;
-        left: 11rem;
-    }
+    /* 1px */
 }
 
 .attribution {
     font-size: 0.6875rem;
     /* 11px */
-    text-align: center;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
     color: white;
+    position: fixed;
     bottom: 1rem;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
