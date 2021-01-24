@@ -47,9 +47,9 @@ h1 {
     background-position: top calc(-45vh - 5%) left calc(1vw - 5%), bottom calc(-55vh - 5%) right calc(2vw - 5%); */
     /* bottom 55vh upper bound for mobile */
     /* background-position: bottom calc(55vh - clamp(-8.5px, 10vw, 125px)) right calc(50vw); */
-    background-position: bottom calc(55vh - 10vw) right calc(50vw), top calc(55vh - 10vw) left calc(50vw);
+    background-position: bottom calc(55vh - 10vw) right calc(50vw), top calc(min(350px, 70vh - 10vw)) left calc(50vw);
     /* background-size: calc(max(622px, 110% - 49vmax)); */
-    background-size: calc(max(622px, 67.91vw)), calc(max(622px, 67.91vw));
+    background-size: calc(max(622px, 64vw)), calc(max(622px, 60vw));
     background-repeat: no-repeat;
     /* background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw); */
 
