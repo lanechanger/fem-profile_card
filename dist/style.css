@@ -41,13 +41,16 @@ h1 {
 }
 
 .main-app {
-    align-items: center;
+            align-items: center;
     background: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg"), var(--dark-cyan);
     background-position: bottom calc(55vh - 10vw) right calc(50vw), top calc(min(350px, 70vh - 10vw)) left calc(50vw);
     background-repeat: no-repeat;
     background-size: calc(max(622px, 64vw)), calc(max(622px, 60vw));
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
     display: flex;
-    justify-content: center;
+        -ms-flex-align: center;
+        justify-content: center;
     min-height: 100vh;
 }
 
@@ -116,8 +119,9 @@ h1 {
 }
 
 .card-middle-line1 {
+    -webkit-box-pack: center;
     display: flex;
-    justify-content: center;
+        justify-content: center;
 }
 
 .name {
@@ -138,8 +142,9 @@ h1 {
 
 .card-bottom {
     background: white;
+    -webkit-box-pack: space-evenly;
     display: flex;
-    justify-content: space-evenly;
+        justify-content: space-evenly;
     padding-bottom: 1.375rem;
     padding-top: 1.375rem;
     text-align: center;
