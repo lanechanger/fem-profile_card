@@ -34,7 +34,6 @@ body {
     color: var(--dark-grayish-blue);
     font-weight: 400;
     line-height: 1.5;
-    overflow: hidden;
 }
 
 h1 {
@@ -48,10 +47,19 @@ h1 {
     background-repeat: no-repeat;
 
     min-height: 100vh;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (orientation:landscape) {
+
+    /* 668px */
+    .main-app {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        /* 160px */
+    }
 }
 
 .card {
@@ -63,14 +71,13 @@ h1 {
     border-radius: 1.125rem;
     /* 18px */
     overflow: hidden;
-    position: relative;
     z-index: 2;
-    box-shadow: 0px 20px 75px -5px hsl(185, 75%, 25%);
+    box-shadow: 0px 15px 75px -5px hsl(185, 75%, 25%);
 }
 
-@media (max-width: 23.4375rem) {
+@media screen and (orientation:portrait) and (max-width: 23.4375rem) {
 
-    /* max-width: 375px */
+    /* 375px */
     .card {
         width: 20.3125rem;
         /* 325px */
@@ -93,6 +100,7 @@ h1 {
     border-radius: 3.4375rem;
     /* 55px */
     width: 6.75rem;
+    /* 108px */
     height: 6.75rem;
     /* 108px */
     position: absolute;
